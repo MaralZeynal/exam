@@ -25,7 +25,12 @@ const DetailPage = () => {
   return (
     <div>
       <div>
-        <p>{detail.name}</p>
+        <h1>{detail.name}</h1>
+        <p>{detail.position}</p>
+        <p>{detail.price}</p>
+      </div>
+      <div>
+        <img src={detail.userImgUrl} alt="" />
       </div>
     </div>
   );
