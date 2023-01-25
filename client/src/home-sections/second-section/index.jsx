@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Helmet } from "react-helmet";
+import {Helmet} from "react-helmet";
 import axios from "axios";
 import "./index.scss";
 import { Link } from "react-router-dom";
@@ -25,6 +25,16 @@ const SecondSection = () => {
     });
   };
 
+  const handleSort = () => {
+    axios.get(`http://localhost:8080/courses`).then((data) => {
+      let sortprice = data.data.sort((a,b) =>
+        a.price-b.price
+      );
+      setCourse(sortprice);
+    });
+    }
+  
+
   const handleDelete = (_id) => {
     axios.delete(`http://localhost:8080/courses/${_id}`);
   };
@@ -34,13 +44,14 @@ const SecondSection = () => {
       <div className="title">
         <div className="line"></div>
         <Helmet>
-          <title>Popular Courses</title>
-          <meta
-            name="description"
-            content="Beginner friendly page for learning React Helmet."
-          />
+            <meta charSet="utf-8" />
+            <title>My Title</title>
+            <link rel="canonical" href="http://mysite.com/example" />
         </Helmet>
-        <input type="text" onChange={(e) => handleSearch(e.target.value)} />
+        <div className="searchBox">
+          <input type="text" onChange={(e) => handleSearch(e.target.value)} />
+          <button onClick={()=>handleSort()}>Sort Price</button>
+        </div>
       </div>
       <div className="cardBox">
         <div id="container">

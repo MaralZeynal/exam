@@ -1,14 +1,13 @@
 .thirdSection {
-  //   background-color: #ffb606;
-  //   #container {
-  // .thirdSec {
-  //   width: 50%;
+  #container {
+    max-width: 1600px;
+    margin: 0 auto;
   display: flex;
   height: 680px;
   .leftSide {
     background-color: #ffb606;
     width: 698px;
-    padding: 5% 0;
+    padding: 5%;
     height: 510px;
     text-align: center;
     .textBox {
@@ -30,15 +29,13 @@
   .rightSide {
     color: white;
     img {
-      height: 700px;
+      height: 670px;
       position: absolute;
       z-index: -1;
     }
     .inputBox {
-      //   margin: 50% 0;
       margin-top: 13%;
       margin-left: 20%;
-      //   margin: 10px 0;
       input {
         padding: 20px 10px;
         margin: 10px 0;
@@ -48,11 +45,10 @@
       button {
         background-color: #ffb606;
         border: none;
-        padding: 20px 10px;
-        width: 720px;
+        padding: 15px 10px;
+        width: 200px;
       }
     }
   }
 }
-//   }
-// }
+}

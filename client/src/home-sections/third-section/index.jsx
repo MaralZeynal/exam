@@ -4,7 +4,7 @@ import "./index.scss";
 const ThirdSection = () => {
   return (
     <div className="thirdSection">
-      {/* <div id="container"> */}
+  <div id="container">
       {/* <div className="thirdSec"> */}
       <div className="leftSide">
         <div className="textBox">
@@ -34,7 +34,7 @@ const ThirdSection = () => {
         </div>
       </div>
     </div>
-    //   </div>
+   </div>
     // </div>
   );
 };

@@ -1,0 +1,18 @@
+#container{
+    max-width: 1200px;
+    margin: 0 auto;
+    .fifthSection{
+        padding: 5%;
+        .secCard{
+            display: flex;
+            gap: 4%;
+            img{
+                width: 350px;
+            }
+            .date{
+                border: 3px solid #ffb606;
+                padding: 5%;
+            }
+        }
+    }
+}

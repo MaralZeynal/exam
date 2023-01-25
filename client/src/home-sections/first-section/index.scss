@@ -4,7 +4,7 @@
     .imgDiv {
       // position: absolute;
       img {
-        position: relative;
+        // position: relative;
       }
     }
     #container {
@@ -12,11 +12,11 @@
       margin: 0 auto;
       .educationTextBox {
         color: white;
-        // position: absolute;
         z-index: 3;
         font-size: 60px;
         display: flex;
         gap: 10px;
+        position: absolute; 
         p {
           margin: 0;
         }

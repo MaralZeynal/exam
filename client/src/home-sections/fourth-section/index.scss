@@ -1,0 +1,20 @@
+#container{
+    max-width: 1200px;
+    margin: 0 auto;
+    .cardDiv{
+        margin-top: 5%;
+        display: flex;
+        flex-wrap: wrap;
+        // justify-content: center;
+        width: 500px;
+        img{
+         width: 50px;
+        }
+        h3{
+            color: #1a1a1a;
+        }
+        p{
+            color: #a5a5a5;
+        }
+    }
+}

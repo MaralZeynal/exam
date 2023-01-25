@@ -27,36 +27,36 @@ app.get("/courses", (req, res) => {
     if (!err) {
       res.send(docs);
     } else {
-      res.send(500).json({ message: err });
+      res.status(500).json({ message: err });
     }
   });
   // res.send("Hello World!");
 });
 
 app.get("/courses/:id", (req, res) => {
+  const { id } = req.params;
   Courses.findById(id, (err, docs) => {
     if (!err) {
       res.send(docs);
     } else {
-      res.send(500).json({ message: err });
+      res.status(500).json({ message: err });
     }
   });
   // res.send("Hello World!");
 });
 
-app.get("/courses/id", (req, res) => {
-  Courses.findByIdAndDelete(id, (err, docs) => {
-    if (!err) {
-      res.send(docs);
-    } else {
-      res.send(500).json({ message: err });
-    }
-  });
-  // res.send("Hello World!");
-});
+// app.get("/courses/:id", (req, res) => {
+//   Courses.findByIdAndDelete(id, (err, docs) => {
+//     if (!err) {
+//       res.send(docs);
+//     } else {
+//       res.send(500).json({ message: err });
+//     }
+//   });
+//   // res.send("Hello World!");
+// });
 
 app.post("/courses", (req, res) => {
-  console.log();
   let course = new Courses({
     name: req.body.name,
     position: req.body.position,

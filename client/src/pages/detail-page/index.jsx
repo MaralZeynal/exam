@@ -16,6 +16,12 @@ const DetailPage = () => {
     getData();
   }, []);
 
+  // useEffect(() => {
+  //   fetch(`http://localhost:8080/courses/${_id}`)
+  //   .then(response => response.json())
+  //   .then(data => setDetail(data.data))
+  // },[])
+
   return (
     <div>
       <div>
