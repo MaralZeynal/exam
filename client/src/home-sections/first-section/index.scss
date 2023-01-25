@@ -1,0 +1,30 @@
+.firstSection {
+  z-index: -1;
+  .firstSec {
+    .imgDiv {
+      // position: absolute;
+      img {
+        position: relative;
+      }
+    }
+    #container {
+      max-width: 1200px;
+      margin: 0 auto;
+      .educationTextBox {
+        color: white;
+        // position: absolute;
+        z-index: 3;
+        font-size: 60px;
+        display: flex;
+        gap: 10px;
+        p {
+          margin: 0;
+        }
+        span {
+          background-color: #ffb606;
+          margin: 0;
+        }
+      }
+    }
+  }
+}
